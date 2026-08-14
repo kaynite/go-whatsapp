@@ -939,7 +939,7 @@ func findStoreDeviceByJID(ctx context.Context, container *sqlstore.Container, ji
 }
 
 func configureDeviceProps() {
-	osName := fmt.Sprintf("%s %s", config.AppOs, config.AppVersion)
+	osName := fmt.Sprintf("%s", config.AppOs)
 	store.DeviceProps.PlatformType = &config.AppPlatform
 	store.DeviceProps.Os = &osName
 }
